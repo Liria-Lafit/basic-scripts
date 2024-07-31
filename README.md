@@ -11,5 +11,5 @@ wget https://github.com/Liria-Lafit/basic-scripts/raw/main/debianbookworm/fastba
 
 chmod +x fastbasics.sh
 
-./install.sh
+./fastbasics.sh
 ```
