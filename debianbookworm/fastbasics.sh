@@ -48,7 +48,7 @@ for index in $text_editor_selection; do
 done
 
 # Utilities 
-utilities=("rofi" "pavucontrol" "pipewire-audio" "wireplumber" "pipewire-pulse" "nitrogen" "feh" "numlockx" ) 
+utilities=("rofi" "pavucontrol" "pipewire-audio" "wireplumber" "pipewire-pulse" "nitrogen" "feh" "numlockx" "redshift" "redshift-gtk" ) 
 
 echo "Choose utilities applications to install (space-separated list, e.g., 1 3 5):"
 for i in "${!utilities[@]}"; do
