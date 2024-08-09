@@ -9,7 +9,4 @@ This is just some neat basic things to help "me" do quick install of some basic 
 ```
 git clone https://github.com/Liria-Lafit/basic_things.git
 
-chmod +x fastbasics.sh
-
-./fastbasics.sh
 ```
