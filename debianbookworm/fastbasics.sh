@@ -48,7 +48,7 @@ for index in $text_editor_selection; do
 done
 
 # Utilities 
-utilities=("rofi" "pavucontrol" "pipewire-audio" "wireplumber" "pipewire-pulse" "nitrogen" "feh" "numlockx" "redshift" "redshift-gtk" ) 
+utilities=("rofi" "wofi" "nitrogen" "feh" "numlockx" "redshift" "redshift-gtk" ) 
 
 echo "Choose utilities applications to install (space-separated list, e.g., 1 3 5):"
 for i in "${!utilities[@]}"; do
@@ -61,5 +61,19 @@ for index in $utilities_selection; do
     selected_utilities+=("${utilities[index-1]}")
 done
 
+# Audio
+audio=("puvucontrol" "pipewire-audio" "wireplumber" "pipewire-pulse" "pipewire-alsa" "libspa-0.2-bluetooth") 
+
+echo "Choose audio applications to install (space-separated list, e.g., 1 3 5):"
+for i in "${!audio[@]}"; do
+    echo "$((i+1)). ${audio[i]}"
+done
+read -rp "Selection: " audio_selection
+
+selected_audio=()
+for index in $audio_selection; do
+    selected_audio+=("${audio[index-1]}")
+done
+
 # Install selected packages
-install_packages "${selected_file_managers[@]}" "${selected_terminals[@]}" "${selected_text_editors[@]}" "${selected_utilities[@]}"
+install_packages "${selected_file_managers[@]}" "${selected_terminals[@]}" "${selected_text_editors[@]}" "${selected_utilities[@]}" "${selected_audio[@]}"
