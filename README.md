@@ -7,7 +7,7 @@ This is just some neat basic things to help "me" do quick install of some basic 
 - more scripts will be created as i try new distros :D
 # Clone
 ```
-git clone https://github.com/Liria-Lafit/basic-scripts.git
+git clone https://github.com/Liria-Lafit/basic_things.git
 
 chmod +x fastbasics.sh
 
