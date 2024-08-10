@@ -62,7 +62,7 @@ for index in $utilities_selection; do
 done
 
 # Audio
-audio=("puvucontrol" "pipewire-audio" "wireplumber" "pipewire-pulse" "pipewire-alsa" "libspa-0.2-bluetooth") 
+audio=("pavucontrol" "pipewire-audio" "wireplumber" "pipewire-pulse" "pipewire-alsa" "libspa-0.2-bluetooth") 
 
 echo "Choose audio applications to install (space-separated list, e.g., 1 3 5):"
 for i in "${!audio[@]}"; do
